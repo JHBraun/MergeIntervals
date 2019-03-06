@@ -10,6 +10,7 @@ To find overlapping intervals, you have to compare the full set of intervals by 
 Therefore the approach of this solution is to firstly sort the given intervals by their individual start number. In this case, you are able to compare the intervals straight in a line, from the lowest to the highest startnumber. The reason is that if a interval(n), e.g. [2,5], can not be merged with the interval(n+1): [7,20], it will also never be possible to merge it with the next interal(n+2): [9,15], because the start number can never be lower. Eventually, you are able to compare the intervals one by one follwing the sorted list.
 
 According to this solution, 3 options appear during a overlap-check:
+
 a) N: [1,5]  N+1: [7,10]
 If the current interval(n) does not overlap with the following one (n+1), both of them will remain.
 
