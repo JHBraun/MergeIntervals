@@ -52,13 +52,12 @@ int main()
 	}
 	vector<interval> ivIPvector;								//create a new vector (input) including interval-objects.
 
-	cout << "Please put in your intervals.\n";					//user-input: needed intervals to merge.
+	cout << "Please enter your intervals. Example: '10 15' ('startnumber(space)endnumber').\n";					//user-input: needed intervals to merge.
 	for (size_t i = 0; i < n; i++)
 	{
 		cout << "Interval " << i + 1 << ":\n";
 		interval myInterval;
 		cin >> myInterval.start;								//write start and end number to current interval-object.
-		cout << ",";
 		cin >> myInterval.end;
 		if (myInterval.start > myInterval.end) {				//show a error message if the user puts in an invalid interval.
 			cout << "Error: No valid input interval.";
