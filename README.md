@@ -12,8 +12,10 @@ Therefore the approach of this solution is to firstly sort the given intervals b
 According to this solution, 3 options appear during a overlap-check:
 a) N: [1,5]  N+1: [7,10]
 If the current interval(n) does not overlap with the following one (n+1), both of them will remain.
+
 b) N: [1,5]  N+1: [3,10]
 If the current interval(n) overlaps with the following one (n+1) and the endnumber of interval(n+1) is higher than from (n), they will be merged and the end number will be updated. -> [1,10]
+
 c) N: [1,5]  N+1: [2,4]
 If the current interval(n) overlaps with the following one (n+1) an the endnumber of interval(n+1) is lower than from (n), interval (n+1) will be merged into interval (n).
 -> [1,5]
